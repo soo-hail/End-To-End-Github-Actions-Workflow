@@ -54,7 +54,10 @@ jobs:
           push: true
           tags: mohammed01705/flask-app:latest
 
+      # ✅ Show list of local Docker images on GitHub runner
+      - name: Docker Images on Runner
+        run: docker images
+
       - name: Image Digest
         run: |
           echo "Digest: ${{ steps.docker_build.outputs.digest }}"
-
