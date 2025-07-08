@@ -52,7 +52,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
+          tags: mohammed01705/flask-app:latest
 
       - name: Image Digest
         run: |
